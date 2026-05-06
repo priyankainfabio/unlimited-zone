@@ -83,18 +83,7 @@ a:hover {
   color: #b78b2f;
 }
 
-.marquee {
-  animation: brandMarquee 35s linear infinite;
-}
 
-@keyframes brandMarquee {
-  from {
-    transform: translateX(0);
-  }
-  to {
-    transform: translateX(-50%);
-  }
-}
 
 .field {
   margin-bottom: 16px;
@@ -235,4 +224,22 @@ a:hover {
 .exact-secondary-btn:hover {
   border-color: #c49a45;
   color: #b88a2b;
+}
+.brand-marquee {
+  display: flex;
+  width: max-content;
+  animation: brandMarquee 28s linear infinite;
+}
+
+.brand-marquee:hover {
+  animation-play-state: paused;
+}
+
+@keyframes brandMarquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
 }

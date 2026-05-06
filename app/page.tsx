@@ -270,14 +270,11 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid gap-5 lg:grid-cols-[1.2fr_0.8fr_0.8fr]">
-            {categories.map((cat, i) => (
+<div className="grid gap-5 md:grid-cols-3">            {categories.map((cat, i) => (
               <motion.div
                 key={cat.title}
                 whileHover={{ y: -10 }}
-                className={`group relative overflow-hidden bg-black ${
-                  i === 0 ? "h-[650px]" : "h-[520px]"
-                }`}
+                className="group relative h-[520px] overflow-hidden bg-black"
               >
                 <img
                   src={cat.img}
@@ -314,7 +311,7 @@ export default function Home() {
   </div>
 
   <div className="mt-10 overflow-hidden border-y border-white/10 bg-[#1a120c] py-8">
-    <div className="brand-marquee flex whitespace-nowrap">
+    <div className="brand-marquee whitespace-nowrap">
       {[...brands, ...brands, ...brands, ...brands].map((brand, index) => (
         <span
           key={index}
@@ -406,7 +403,7 @@ export default function Home() {
       </section>
 
       {/* HAPPY CUSTOMERS - VIDEO STORIES */}
-<section className="relative overflow-hidden bg-[#0d0d0c] px-6 py- text-white">
+<section className="relative overflow-hidden bg-[#0d0d0c] px-6 py-16 text-white">
   <div className="absolute left-1/2 top-0 h-[420px] w-[420px] -translate-x-1/2 rounded-full bg-[#c49a45]/15 blur-[120px]" />
 
   <div className="mx-auto max-w-7xl">
