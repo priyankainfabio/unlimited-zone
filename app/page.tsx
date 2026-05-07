@@ -1,5 +1,5 @@
 "use client";
-
+import { FaInstagram, FaFacebookF, FaYoutube } from "react-icons/fa";
 import { motion, useMotionValue, useSpring } from "framer-motion";
 import {
   ArrowRight,
@@ -108,14 +108,14 @@ export default function Home() {
 
       {/* NAVBAR */}
       <header className="fixed left-0 top-0 z-40 w-full border-b border-black/10 bg-[#f3eadf]/85 backdrop-blur-xl xl:pl-[72px]">
-        <div className="mx-auto flex h-24 max-w-[1550px] items-center justify-between px-6 lg:px-10">
+        <div className="mx-auto flex h-18 max-w-[1550px] items-center justify-between px-6 lg:px-10">
           <img
             src="/unlimited-logo.png"
             alt="Unlimited Zone"
             className="h-14 w-auto object-contain"
           />
 
-          <nav className="hidden items-center gap-12 text-sm font-bold uppercase tracking-wide md:flex">
+          <nav className="hidden items-center gap-10 text-sm font-bold uppercase tracking-wide md:flex">
             <a href="#collections">Collections</a>
             <a href="#brands">Brands</a>
             <a href="#legacy">Legacy</a>
@@ -193,7 +193,7 @@ export default function Home() {
 
     {/* RIGHT IMAGE */}
     <div className="relative hidden overflow-hidden lg:block">
-    <div className="absolute inset-y-0 left-[-1px] z-20 w-64 bg-[#f8f3eb] [clip-path:polygon(0_0,100%_0,8%_100%,0_100%)]" />
+    <div className="absolute inset-y-0 left-[-140px] z-20 w-[360px] bg-[#f8f3eb] [clip-path:polygon(0_0,100%_0,38%_100%,0_100%)]" />
       <img
         src="/hero-showroom.png"
         alt="Unlimited Zone showroom"
@@ -339,7 +339,7 @@ export default function Home() {
               alt="Retail legacy"
               className="h-[680px] w-full object-cover"
             />
-            <div className="absolute -bottom-8 right-8 bg-black p-8 text-white">
+            <div className="absolute -bottom-1 right-8 bg-black p-8 text-white">
               <p className="text-5xl font-black text-[#c49a45]">2001</p>
               <p className="mt-2 text-sm uppercase tracking-widest text-white/60">
                 Fashion retail journey began
@@ -410,7 +410,7 @@ export default function Home() {
     <div className="grid gap-12 lg:grid-cols-[0.9fr_1.1fr] lg:items-end">
       <div>
         <p className="section-kicker">Happy Customers, Happy Stories</p>
-        <h2 className="mt-5 max-w-3xl text-5xl font-black leading-[0.95] tracking-[-0.05em] md:text-7xl">
+        <h2 className="mt-5 whitespace-nowrap text-[5.2rem] font-black leading-[0.95] tracking-[-0.08em]">
           Real people. Real shopping moments.
         </h2>
         <p className="mt-6 max-w-xl text-lg leading-8 text-white/60">
@@ -419,16 +419,14 @@ export default function Home() {
         </p>
       </div>
 
-      <div className="rounded-full border border-white/10 bg-white/[0.04] px-6 py-4 text-sm font-bold uppercase tracking-[0.2em] text-white/60">
-        Family Fashion • 75+ Brands • Trusted Stores
-      </div>
+      
     </div>
 
     <div className="mt-2 grid gap-6 lg:grid-cols-[1.2fr_0.8fr]">
       {/* Big Video Card */}
-      <div className="group relative h-[400px] overflow-hidden bg-black">
+      <div className="group relative h-[500px] overflow-hidden bg-black">
         <img
-          src="https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?q=80&w=1400&auto=format&fit=crop"
+          src="/family-shopping.jpg"
           alt="Happy customer shopping"
           className="h-full w-full object-cover opacity-75 transition duration-700 group-hover:scale-105 group-hover:opacity-55"
         />
@@ -460,12 +458,12 @@ export default function Home() {
           {
             name: "Family Shopping",
             text: "Men, women and kids collections under one roof.",
-            img: "https://images.unsplash.com/photo-1519741497674-611481863552?q=80&w=900&auto=format&fit=crop",
+            img: "https://images.unsplash.com/photo-1512436991641-6745cdb1723f?q=80&w=900&auto=format&fit=crop",
           },
           {
             name: "Premium Brands",
             text: "Trusted names and everyday fashion choices.",
-            img: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=900&auto=format&fit=crop",
+            img: "https://images.unsplash.com/photo-1483985988355-763728e1935b?q=80&w=900&auto=format&fit=crop",
           },
         ].map((item) => (
           <div
@@ -533,45 +531,159 @@ export default function Home() {
       </section>
 
       {/* FOOTER */}
-      <footer className="bg-[#f7efe4] px-6 py-16 xl:pl-[120px]">
-        <div className="mx-auto grid max-w-[1400px] gap-12 md:grid-cols-4">
-          <div>
-            <img src="/unlimited-logo.png" alt="Unlimited Zone" className="h-14" />
-            <p className="mt-5 max-w-xs text-black/55">
-              Complete family fashion retail experience across India.
-            </p>
+<footer className="relative overflow-hidden bg-[#050505] px-6 py-10 text-white xl:px-[120px]">
+  
+  {/* Luxury Glow */}
+  <div className="absolute inset-0 bg-[radial-gradient(circle_at_center,rgba(196,154,69,0.12),transparent_45%)]" />
+
+  <div className="relative z-10 mx-auto max-w-[1400px]">
+    
+    {/* TOP */}
+    <div className="grid gap-14 border-b border-white/10 pb-16 md:grid-cols-2 xl:grid-cols-5">
+      
+      {/* BRAND */}
+      <div className="xl:col-span-2">
+        <img
+          src="/unlimited-logo.png"
+          alt="Unlimited Zone"
+          className="h-16 w-auto rounded-xl bg-white p-3"
+        />
+
+        <p className="mt-6 max-w-md text-[15px] leading-8 text-white/60">
+          Unlimited Zone is a premium family fashion destination bringing
+          together trusted brands, curated collections and modern retail
+          experiences under one roof.
+        </p>
+
+        <div className="mt-8 flex flex-wrap gap-3">
+          <div className="border border-white/10 px-4 py-2 text-[11px] font-black uppercase tracking-[0.25em] text-white/70">
+            75+ Brands
           </div>
 
-          <div>
-            <h4 className="font-black uppercase">Explore</h4>
-            <div className="mt-5 space-y-3 text-black/55">
-              <p>Men</p>
-              <p>Women</p>
-              <p>Kids</p>
-              <p>Brands</p>
-            </div>
+          <div className="border border-white/10 px-4 py-2 text-[11px] font-black uppercase tracking-[0.25em] text-white/70">
+            9+ Stores
           </div>
 
-          <div>
-            <h4 className="font-black uppercase">Contact</h4>
-            <div className="mt-5 space-y-3 text-black/55">
-              <p className="flex items-center gap-2">
-                <Phone size={16} /> +91 8800 024 750
-              </p>
-              <p className="flex items-center gap-2">
-                <Mail size={16} /> Franchise Enquiry
-              </p>
-            </div>
-          </div>
-
-          <div>
-            <h4 className="font-black uppercase">Head Office</h4>
-            <p className="mt-5 text-black/55">
-              72a, Sector 74, Ward 026, Behrampur, Gurgaon – 122004
-            </p>
+          <div className="border border-white/10 px-4 py-2 text-[11px] font-black uppercase tracking-[0.25em] text-white/70">
+            Since 2001
           </div>
         </div>
-      </footer>
+      </div>
+
+      {/* COLLECTIONS */}
+      <div>
+        <h4 className="text-sm font-black uppercase tracking-[0.25em] text-[#c49a45]">
+          Collections
+        </h4>
+
+        <div className="mt-6 space-y-4 text-white/60">
+          <a href="#" className="block hover:text-[#c49a45]">
+            Men
+          </a>
+
+          <a href="#" className="block hover:text-[#c49a45]">
+            Women
+          </a>
+
+          <a href="#" className="block hover:text-[#c49a45]">
+            Kids
+          </a>
+
+          <a href="#" className="block hover:text-[#c49a45]">
+            Premium Brands
+          </a>
+
+          <a href="#" className="block hover:text-[#c49a45]">
+            Franchise
+          </a>
+        </div>
+      </div>
+
+      {/* CONTACT */}
+      <div>
+        <h4 className="text-sm font-black uppercase tracking-[0.25em] text-[#c49a45]">
+          Contact
+        </h4>
+
+        <div className="mt-6 space-y-5 text-white/60">
+          
+          <p className="flex items-center gap-3">
+            <Phone size={16} />
+            +91 8800 024 750
+          </p>
+
+          <p className="flex items-center gap-3">
+            <Mail size={16} />
+            franchise@unlimitedzone.in
+          </p>
+
+          <p className="leading-7">
+            Mon - Sat: 10 AM — 9 PM
+          </p>
+        </div>
+      </div>
+
+      {/* OFFICE */}
+      <div>
+        <h4 className="text-sm font-black uppercase tracking-[0.25em] text-[#c49a45]">
+          Head Office
+        </h4>
+
+        <p className="mt-6 leading-8 text-white/60">
+          72A, Sector 74, Ward 026,
+          Behrampur, Gurgaon – 122004
+        </p>
+
+        {/* SOCIAL */}
+        <div className="mt-8 flex gap-4">
+          
+          <a
+            href="#"
+            className="flex h-11 w-11 items-center justify-center border border-white/10 transition hover:border-[#c49a45] hover:bg-[#c49a45] hover:text-black"
+          >
+            <FaInstagram size={18} />
+          </a>
+
+          <a
+            href="#"
+            className="flex h-11 w-11 items-center justify-center border border-white/10 transition hover:border-[#c49a45] hover:bg-[#c49a45] hover:text-black"
+          >
+            <FaFacebookF size={18} />
+          </a>
+
+          <a
+            href="#"
+            className="flex h-11 w-11 items-center justify-center border border-white/10 transition hover:border-[#c49a45] hover:bg-[#c49a45] hover:text-black"
+          >
+            <FaYoutube size={18} />
+          </a>
+        </div>
+      </div>
+    </div>
+
+    {/* BOTTOM */}
+    <div className="flex flex-col items-center justify-between gap-6 pt-8 text-sm text-white/40 md:flex-row">
+      
+      <p>
+        © 2026 Unlimited Zone. All rights reserved.
+      </p>
+
+      <div className="flex gap-8">
+        <a href="#" className="hover:text-[#c49a45]">
+          Privacy Policy
+        </a>
+
+        <a href="#" className="hover:text-[#c49a45]">
+          Terms & Conditions
+        </a>
+      </div>
+
+      <p>
+        Designed & Developed with Luxury Experience
+      </p>
+    </div>
+  </div>
+</footer>
     </main>
   );
 }
