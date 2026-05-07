@@ -634,30 +634,77 @@ export default function Home() {
           Behrampur, Gurgaon – 122004
         </p>
 
-        {/* SOCIAL */}
-        <div className="mt-8 flex gap-4">
-          
-          <a
-            href="#"
-            className="flex h-11 w-11 items-center justify-center border border-white/10 transition hover:border-[#c49a45] hover:bg-[#c49a45] hover:text-black"
-          >
-            <FaInstagram size={18} />
-          </a>
+       {/* FOLLOW US */}
+<div className="mt-8">
+  
+  <p className="mb-4 text-[11px] font-black uppercase tracking-[0.25em] text-white/40">
+    Follow Us
+  </p>
 
-          <a
-            href="#"
-            className="flex h-11 w-11 items-center justify-center border border-white/10 transition hover:border-[#c49a45] hover:bg-[#c49a45] hover:text-black"
-          >
-            <FaFacebookF size={18} />
-          </a>
+  <div className="flex gap-4">
+    
+    <a
+      href="#"
+      className="group flex h-11 w-11 items-center justify-center border border-white/10 transition hover:border-[#c49a45] hover:bg-[#c49a45]"
+    >
+      <FaInstagram
+        size={18}
+        className="transition group-hover:text-black"
+      />
+    </a>
 
-          <a
-            href="#"
-            className="flex h-11 w-11 items-center justify-center border border-white/10 transition hover:border-[#c49a45] hover:bg-[#c49a45] hover:text-black"
-          >
-            <FaYoutube size={18} />
-          </a>
-        </div>
+    <a
+      href="#"
+      className="group flex h-11 w-11 items-center justify-center border border-white/10 transition hover:border-[#c49a45] hover:bg-[#c49a45]"
+    >
+      <FaFacebookF
+        size={18}
+        className="transition group-hover:text-black"
+      />
+    </a>
+
+    <a
+      href="#"
+      className="group flex h-11 w-11 items-center justify-center border border-white/10 transition hover:border-[#c49a45] hover:bg-[#c49a45]"
+    >
+      <FaYoutube
+        size={18}
+        className="transition group-hover:text-black"
+      />
+    </a>
+  </div>
+</div>
+
+{/* POWERED BY */}
+<div className="mt-10">
+  <p className="mb-4 text-[11px] font-black uppercase tracking-[0.25em] text-white/40">
+    Powered By
+  </p>
+
+  <div className="flex gap-4">
+    <a
+      href="#"
+      className="group flex h-11 w-11 items-center justify-center border border-white/10 bg-transparent transition hover:border-[#c49a45] hover:bg-[#c49a45]"
+    >
+      <img
+  src="/fabulous-logo.png"
+  alt="Fabulous Media"
+  className="h-7 w-auto object-contain"
+/>
+    </a>
+
+    <a
+      href="#"
+      className="group flex h-11 w-11 items-center justify-center border border-white/10 bg-transparent transition hover:border-[#c49a45] hover:bg-[#c49a45]"
+    >
+      <img
+        src="/gocommercially-logo.png"
+        alt="Go Commercially"
+        className="h-5 w-auto object-contain brightness-0 invert transition group-hover:brightness-0 group-hover:invert-0"
+      />
+    </a>
+  </div>
+</div>
       </div>
     </div>
 
