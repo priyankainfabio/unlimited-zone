@@ -676,33 +676,39 @@ export default function Home() {
 </div>
 
 {/* POWERED BY */}
-<div className="mt-10">
-  <p className="mb-4 text-[11px] font-black uppercase tracking-[0.25em] text-white/40">
-    Powered By
-  </p>
+<div className="mt-5 flex justify-end">
+  <div className="inline-flex items-center gap-2 rounded-lg border border-white/20 bg-white/5 px-3 py-2 transition-all duration-300 hover:bg-white/10">
 
-  <div className="flex gap-4">
     <a
-      href="#"
-      className="group flex h-11 w-11 items-center justify-center border border-white/10 bg-transparent transition hover:border-[#c49a45] hover:bg-[#c49a45]"
+      href="https://fabulousmedia.in/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="opacity-90 hover:opacity-100 transition-opacity"
+      aria-label="FabulousMedia"
     >
       <img
-  src="/fabulous-logo.png"
-  alt="Fabulous Media"
-  className="h-7 w-auto object-contain"
-/>
+        src="/fabulous-logo.png"
+        alt="FabulousMedia"
+        className="h-3 w-auto"
+      />
     </a>
 
+    <span className="h-3 w-px bg-white/30" />
+
     <a
-      href="#"
-      className="group flex h-11 w-11 items-center justify-center border border-white/10 bg-transparent transition hover:border-[#c49a45] hover:bg-[#c49a45]"
+      href="https://gocommercially.com/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="opacity-200 hover:opacity-200 transition-opacity"
+      aria-label="GoCommercially"
     >
       <img
         src="/gocommercially-logo.png"
-        alt="Go Commercially"
-        className="h-5 w-auto object-contain brightness-0 invert transition group-hover:brightness-0 group-hover:invert-0"
+        alt="GoCommercially"
+        className="h-3 w-auto"
       />
     </a>
+
   </div>
 </div>
       </div>
